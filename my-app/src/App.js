@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import React from 'react';
+import Counter from './examples/LifecycleExample'; 
 
 class Header extends React.Component {
   render() {
@@ -31,7 +32,6 @@ function Footer() {
   );
 }
 
-
 function Top(props) {
   return (
     <div className="top">
@@ -45,14 +45,14 @@ function App(props) {
   return (
     <div className="App">
       <Top name={props.name} />
-      <Main />
-      <Footer />
+      <Main></Main>    
+      <Counter></Counter>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
       </header>
+      <Footer></Footer>
     </div>
   );
 }
-
 
 export default App;
