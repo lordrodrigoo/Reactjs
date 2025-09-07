@@ -2,6 +2,8 @@ import logo from './logo.svg';
 import './App.css';
 import React from 'react';
 import Counter from './examples/LifecycleExample'; 
+import User from './examples/BindExample';
+
 
 class Header extends React.Component {
   render() {
@@ -39,7 +41,12 @@ function Top(props) {
       <Navegation />
     </div>
   );
-}  
+}
+
+const newUser = {
+    name: 'Maria',
+    age: 25
+};
 
 function App(props) {
   return (
@@ -47,6 +54,7 @@ function App(props) {
       <Top name={props.name} />
       <Main></Main>    
       <Counter></Counter>
+      <User user={newUser}/>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
       </header>

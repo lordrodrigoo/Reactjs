@@ -11,11 +11,16 @@ class Counter extends React.Component {
     this.setState({ number: this.state.number + 1 });
   }
 
+  decrement = () => {
+    this.setState({ number: this.state.number - 1 });
+  }
+
   render() {
     return (
         <>
-            <h2>O valor do número é {this.state.number}</h2>
-            <button onClick={this.increment}>Incrementar</button>
+            <h2>Stoque de produto x = {this.state.number}</h2>
+            <button onClick={this.decrement}>-</button>
+            <button onClick={this.increment}>+</button>
         </>
     );
   }
