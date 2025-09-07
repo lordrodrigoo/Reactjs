@@ -3,6 +3,7 @@ import './App.css';
 import React from 'react';
 import Counter from './examples/LifecycleExample'; 
 import User from './examples/BindExample';
+import LinkClick from './examples/ManipulatingEvents';
 
 
 class Header extends React.Component {
@@ -22,9 +23,12 @@ function Navegation() {
   )
 }
 
-function Main() {
+function Main(props) {
   return (
-    <div className="main">Main Content</div>
+    <div className="main">
+      Main Content
+      {props.children}
+    </div>
   );
 }
 
@@ -52,7 +56,9 @@ function App(props) {
   return (
     <div className="App">
       <Top name={props.name} />
-      <Main></Main>    
+      <Main>
+        <LinkClick />
+      </Main>    
       <Counter></Counter>
       <User user={newUser}/>
       <header className="App-header">
