@@ -6,6 +6,7 @@ import User from './examples/BindExample';
 import LinkClick from './examples/ManipulatingEvents';
 import GenerateElements from './examples/Lists_and_Keys_Example';
 import Forms from './examples/Forms-1';
+import Vehicle from './examples/Forms-2';
 
 class Header extends React.Component {
   render() {
@@ -66,6 +67,7 @@ function App(props) {
         <Forms></Forms>
         <GenerateElements></GenerateElements>
       </div>
+      <Vehicle></Vehicle>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
       </header>
