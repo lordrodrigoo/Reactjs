@@ -146,3 +146,19 @@
   border-radius: 5px;
   font-size: 14px;
 }
+
+.hook-state  {
+  border: 1px, solid #100606;
+}
+
+.hook {
+  border: 1px solid #100606;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.use-effect {
+  border: 1px solid #100606;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}

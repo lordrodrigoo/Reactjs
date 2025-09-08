@@ -7,6 +7,9 @@ import LinkClick from './examples/ManipulatingEvents';
 import GenerateElements from './examples/Lists_and_Keys_Example';
 import Forms from './examples/Forms-1';
 import Vehicle from './examples/Forms-2';
+import ExampleHook from './examples/Hooks';
+import UseHookAndState from './examples/useState';
+import ExampleUseEffect from './examples/useEffect';
 
 class Header extends React.Component {
   render() {
@@ -68,6 +71,10 @@ function App(props) {
         <GenerateElements></GenerateElements>
       </div>
       <Vehicle></Vehicle>
+      <ExampleHook ></ExampleHook>
+      <UseHookAndState ></UseHookAndState>
+      <ExampleUseEffect ></ExampleUseEffect>
+
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
       </header>
@@ -77,3 +84,19 @@ function App(props) {
 }
 
 export default App;
+
+
+// const [view, setView] = React.useState(true);
+
+//   setTimeout(() => {
+//     setView(false);
+//   }, 5000);
+
+//   return view &&(
+//     <>
+//       <ExampleHook ></ExampleHook>
+//       <UseHookAndState ></UseHookAndState>
+//       <ExampleUseEffect ></ExampleUseEffect>
+  
+//     </>
+//   );
