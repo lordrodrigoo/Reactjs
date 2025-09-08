@@ -81,3 +81,23 @@
   text-decoration: underline;
   
 }
+
+.cars-table {
+  border-collapse: collapse;
+  width: 300px;
+  margin: 20px auto; 
+}
+
+.cars-table th, .cars-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+.cars-table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+.cars-table tr:nth-child(even) {
+  background-color: #fafafa;
+}

@@ -4,7 +4,7 @@ import React from 'react';
 import Counter from './examples/LifecycleExample'; 
 import User from './examples/BindExample';
 import LinkClick from './examples/ManipulatingEvents';
-
+import GenerateElements from './examples/Lists_and_Keys_Example';
 
 class Header extends React.Component {
   render() {
@@ -61,6 +61,7 @@ function App(props) {
       </Main>    
       <Counter></Counter>
       <User user={newUser}/>
+      <GenerateElements></GenerateElements>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
       </header>
