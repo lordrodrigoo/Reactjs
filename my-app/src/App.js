@@ -5,6 +5,7 @@ import Counter from './examples/LifecycleExample';
 import User from './examples/BindExample';
 import LinkClick from './examples/ManipulatingEvents';
 import GenerateElements from './examples/Lists_and_Keys_Example';
+import Forms from './examples/Forms-1';
 
 class Header extends React.Component {
   render() {
@@ -61,7 +62,10 @@ function App(props) {
       </Main>    
       <Counter></Counter>
       <User user={newUser}/>
-      <GenerateElements></GenerateElements>
+      <div className="table-form">
+        <Forms></Forms>
+        <GenerateElements></GenerateElements>
+      </div>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
       </header>

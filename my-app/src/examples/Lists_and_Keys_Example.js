@@ -5,20 +5,22 @@ function GenerateElements() {
     const listcars = cars.map((car) => <li>{car}</li>);
 
     return (
-        <table className="cars-table">
-      <thead>
-        <tr>
-          <th>Tabela de Carros</th>
-        </tr>
-      </thead>
-      <tbody>
-        {cars.map((car, index) => (
-          <tr key={index}>
-            <td>{car}</td>
+      <div className="table">
+          <table className="cars-table">
+        <thead>
+          <tr>
+            <th>Tabela de Carros</th>
           </tr>
-        ))}
-      </tbody>
-    </table>
+        </thead>
+        <tbody>
+          {cars.map((car, index) => (
+            <tr key={index}>
+              <td>{car}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+      </div>
   );
 }
 
