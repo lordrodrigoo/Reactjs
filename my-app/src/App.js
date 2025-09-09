@@ -12,6 +12,7 @@ import UseHookAndState from './examples/useState';
 import ExampleUseEffect from './examples/useEffect';
 import UsingFetchAPI from './examples/UsingFectchAPI';
 import UsingAxios from './examples/Axios';
+import UsingJquery from './examples/Jquery';
 
 class Header extends React.Component {
   render() {
@@ -82,6 +83,7 @@ function App(props) {
       </header>
       <UsingFetchAPI></UsingFetchAPI>
       <UsingAxios></UsingAxios>
+      <UsingJquery></UsingJquery>
       <Footer></Footer>
     </div>
   );
