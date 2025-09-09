@@ -1,0 +1,192 @@
+[
+  {
+    "id": 1,
+    "name": "Alice Martins",
+    "username": "alicem",
+    "email": "alice.martins@example.com",
+    "address": {
+      "street": "Rua das Flores",
+      "suite": "Apto. 101",
+      "city": "São Paulo",
+      "zipcode": "01001-000"
+    },
+    "phone": "11-91234-5678",
+    "website": "alicemartins.dev",
+    "company": {
+      "name": "TechBrasil",
+      "catchPhrase": "Inovação sem limites",
+      "bs": "cloud solutions"
+    }
+  },
+  {
+    "id": 2,
+    "name": "Bruno Oliveira",
+    "username": "brunoo",
+    "email": "bruno.oliveira@example.com",
+    "address": {
+      "street": "Av. Paulista",
+      "suite": "Sala 505",
+      "city": "São Paulo",
+      "zipcode": "01310-100"
+    },
+    "phone": "11-99876-5432",
+    "website": "brunoliveira.com",
+    "company": {
+      "name": "InovaTI",
+      "catchPhrase": "Soluções sob medida",
+      "bs": "digital transformation"
+    }
+  },
+  {
+    "id": 3,
+    "name": "Carla Souza",
+    "username": "carlas",
+    "email": "carla.souza@example.com",
+    "address": {
+      "street": "Rua Verde",
+      "suite": "Casa 12",
+      "city": "Campinas",
+      "zipcode": "13000-200"
+    },
+    "phone": "19-97777-1234",
+    "website": "carlasouza.me",
+    "company": {
+      "name": "NextGen",
+      "catchPhrase": "Tecnologia que conecta",
+      "bs": "mobile first"
+    }
+  },
+  {
+    "id": 4,
+    "name": "Diego Ramos",
+    "username": "diegor",
+    "email": "diego.ramos@example.com",
+    "address": {
+      "street": "Rua Central",
+      "suite": "Bloco B",
+      "city": "Rio de Janeiro",
+      "zipcode": "22000-300"
+    },
+    "phone": "21-93456-7890",
+    "website": "diegoramos.io",
+    "company": {
+      "name": "SoftRio",
+      "catchPhrase": "Agilidade e qualidade",
+      "bs": "software solutions"
+    }
+  },
+  {
+    "id": 5,
+    "name": "Eduarda Lima",
+    "username": "eduardal",
+    "email": "eduarda.lima@example.com",
+    "address": {
+      "street": "Rua do Sol",
+      "suite": "Apto. 32",
+      "city": "Belo Horizonte",
+      "zipcode": "30000-400"
+    },
+    "phone": "31-95555-6789",
+    "website": "eduardalima.org",
+    "company": {
+      "name": "BHTech",
+      "catchPhrase": "Transformando ideias",
+      "bs": "AI solutions"
+    }
+  },
+  {
+    "id": 6,
+    "name": "Felipe Santos",
+    "username": "felipes",
+    "email": "felipe.santos@example.com",
+    "address": {
+      "street": "Rua Azul",
+      "suite": "Casa 45",
+      "city": "Fortaleza",
+      "zipcode": "60000-500"
+    },
+    "phone": "85-94444-3333",
+    "website": "felipesantos.net",
+    "company": {
+      "name": "NordesteDev",
+      "catchPhrase": "Tecnologia do futuro",
+      "bs": "cloud native"
+    }
+  },
+  {
+    "id": 7,
+    "name": "Gabriela Ferreira",
+    "username": "gabif",
+    "email": "gabriela.ferreira@example.com",
+    "address": {
+      "street": "Rua das Palmeiras",
+      "suite": "Apto. 202",
+      "city": "Curitiba",
+      "zipcode": "80000-600"
+    },
+    "phone": "41-96666-2222",
+    "website": "gabrielaferreira.dev",
+    "company": {
+      "name": "SulSoft",
+      "catchPhrase": "Inovação com propósito",
+      "bs": "smart apps"
+    }
+  },
+  {
+    "id": 8,
+    "name": "Henrique Costa",
+    "username": "henriquec",
+    "email": "henrique.costa@example.com",
+    "address": {
+      "street": "Av. Brasil",
+      "suite": "Sala 707",
+      "city": "Recife",
+      "zipcode": "50000-700"
+    },
+    "phone": "81-97777-1111",
+    "website": "henriquecosta.dev",
+    "company": {
+      "name": "PernambucoTI",
+      "catchPhrase": "Criando experiências",
+      "bs": "e-commerce"
+    }
+  },
+  {
+    "id": 9,
+    "name": "Isabela Rocha",
+    "username": "isabelar",
+    "email": "isabela.rocha@example.com",
+    "address": {
+      "street": "Rua Nova",
+      "suite": "Casa 9",
+      "city": "Salvador",
+      "zipcode": "40000-800"
+    },
+    "phone": "71-93333-4444",
+    "website": "isabelarocha.me",
+    "company": {
+      "name": "BahiaCode",
+      "catchPhrase": "Tecnologia acessível",
+      "bs": "open source"
+    }
+  },
+  {
+    "id": 10,
+    "name": "João Pedro Alves",
+    "username": "joaopa",
+    "email": "joao.alves@example.com",
+    "address": {
+      "street": "Rua Antiga",
+      "suite": "Bloco C",
+      "city": "Porto Alegre",
+      "zipcode": "90000-900"
+    },
+    "phone": "51-98888-5555",
+    "website": "joaopedro.dev",
+    "company": {
+      "name": "GaúchoTech",
+      "catchPhrase": "Do Sul para o mundo",
+      "bs": "big data"
+    }
+  }
+]

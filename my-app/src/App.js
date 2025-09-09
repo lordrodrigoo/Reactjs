@@ -10,6 +10,7 @@ import Vehicle from './examples/Forms-2';
 import ExampleHook from './examples/Hooks';
 import UseHookAndState from './examples/useState';
 import ExampleUseEffect from './examples/useEffect';
+import UsingFetchAPI from './examples/UsingFectchAPI';
 
 class Header extends React.Component {
   render() {
@@ -78,6 +79,8 @@ function App(props) {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
       </header>
+      <UsingFetchAPI></UsingFetchAPI>
+
       <Footer></Footer>
     </div>
   );
