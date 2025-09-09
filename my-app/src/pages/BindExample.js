@@ -4,7 +4,7 @@ import React from "react";
 // of a given element. In an event, the this refers, in most cases, to the
 // component that invoked that event.
 
-class User extends React.Component {
+class UserBind extends React.Component {
   constructor(props) {
     super(props);
     this.state = { name: 'Rodrigo', age: 30 };
@@ -31,4 +31,4 @@ class User extends React.Component {
 
 
 
-export default User
+export default UserBind;

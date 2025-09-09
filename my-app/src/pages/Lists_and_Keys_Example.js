@@ -1,8 +1,7 @@
-import React from "react";
+
 
 function GenerateElements() {
     const cars = ['Ford', 'Chevrolet', 'Toyota', 'Honda'];
-    const listcars = cars.map((car) => <li>{car}</li>);
 
     return (
       <div className="table">

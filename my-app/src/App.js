@@ -1,95 +1,58 @@
-import logo from './logo.svg';
-import './App.css';
-import React from 'react';
-import Counter from './examples/LifecycleExample'; 
-import User from './examples/BindExample';
-import LinkClick from './examples/ManipulatingEvents';
-import GenerateElements from './examples/Lists_and_Keys_Example';
-import Forms from './examples/Forms-1';
-import Vehicle from './examples/Forms-2';
-import ExampleHook from './examples/Hooks';
-import UseHookAndState from './examples/useState';
-import ExampleUseEffect from './examples/useEffect';
-import UsingFetchAPI from './examples/UsingFectchAPI';
-import UsingAxios from './examples/Axios';
-import UsingJquery from './examples/Jquery';
+import {Routes, Route} from 'react-router-dom';
 
-class Header extends React.Component {
-  render() {
-    return (
+import Main from './components/Main';
+
+// Pages
+import UserBind from './pages/BindExample';
+import UserForm from './pages/Forms-1';
+import Vehicle from './pages/Forms-2';
+import ExampleHook from './pages/HooksExample';
+import UsingJquery from './pages/JqueryExample';
+import Counter from './pages/LifecycleExample';
+import GenerateElements from './pages/Lists_and_Keys_Example';
+import LinkClick from './pages/ManipulatingEvents';
+import ExampleUseEffect from './pages/useEffectExample';
+import UseHookAndState from './pages/useStateExample';
+import UsingAxios from './pages/UsingAxiosExample';
+import UsingFetchAPI from './pages/UsingFectchAPIExample';
+
+//components
+import { Footer } from './components/Footer';
+
+
+export default function App() {
+  const newUser = { name: 'Rodrigo', age: 34 };
+
+  return (
+    <>
       <header className="header">
-        <h1 className='welcome'>Welcome {this.props.name}!</h1>
-        <h2 className="title">Manipulating Components</h2>
+        <h1 className='welcome'>Welcome {newUser.name}!</h1>
+        
       </header>
-    );
-  }
-}
-
-function Navegation() {
-  return (
-    <div className="navegation">Navegation Bar</div>
-  )
-}
-
-function Main(props) {
-  return (
-    <div className="main">
-      Main Content
-      {props.children}
-    </div>
-  );
-}
-
-function Footer() {
-  return (
-    <div className="footer">Footer</div>
-  );
-}
-
-function Top(props) {
-  return (
-    <div className="top">
-      <Header name={props.name} />
-      <Navegation />
-    </div>
-  );
-}
-
-const newUser = {
-    name: 'Maria',
-    age: 25
-};
-
-function App(props) {
-  return (
-    <div className="App">
-      <Top name={props.name} />
       <Main>
-        <LinkClick />
-      </Main>    
-      <Counter></Counter>
-      <User user={newUser}/>
-      <div className="table-form">
-        <Forms></Forms>
-        <GenerateElements></GenerateElements>
-      </div>
-      <Vehicle></Vehicle>
-      <ExampleHook ></ExampleHook>
-      <UseHookAndState ></UseHookAndState>
-      <ExampleUseEffect ></ExampleUseEffect>
+        <Routes>
+          <Route path="/" element={<div>Home Page</div>} />
+          <Route path="/counter" element={<Counter />} />
+          <Route path="/userform" element={<UserForm user={newUser} />} />
+          <Route path="/userbind" element={<UserBind user={newUser} />} />
+          <Route path="/linkclick" element={<LinkClick />} />
+          <Route path="/generateelements" element={<GenerateElements />} />
+          <Route path="/vehicle" element={<Vehicle />} />
+          <Route path="/examplehook" element={<ExampleHook />} />
+          <Route path="/usehookandstate" element={<UseHookAndState />} />
+          <Route path="/exampleuseeffect" element={<ExampleUseEffect />} />
+          <Route path="/usingfetchapi" element={<UsingFetchAPI />} />
+          <Route path="/usingaxios" element={<UsingAxios />} />
+          <Route path="/usingjquery" element={<UsingJquery />} />
+        </Routes>
+      </Main>
+      <Footer />
+      
     
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-      </header>
-      <UsingFetchAPI></UsingFetchAPI>
-      <UsingAxios></UsingAxios>
-      <UsingJquery></UsingJquery>
-      <Footer></Footer>
-    </div>
+    </>
   );
-}
+}  
 
-export default App;
 
 
 // const [view, setView] = React.useState(true);
