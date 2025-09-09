@@ -11,6 +11,7 @@ import ExampleHook from './examples/Hooks';
 import UseHookAndState from './examples/useState';
 import ExampleUseEffect from './examples/useEffect';
 import UsingFetchAPI from './examples/UsingFectchAPI';
+import UsingAxios from './examples/Axios';
 
 class Header extends React.Component {
   render() {
@@ -75,12 +76,12 @@ function App(props) {
       <ExampleHook ></ExampleHook>
       <UseHookAndState ></UseHookAndState>
       <ExampleUseEffect ></ExampleUseEffect>
-
+    
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
       </header>
       <UsingFetchAPI></UsingFetchAPI>
-
+      <UsingAxios></UsingAxios>
       <Footer></Footer>
     </div>
   );
