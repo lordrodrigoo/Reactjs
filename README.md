@@ -31,6 +31,7 @@ my-app
 │   ├── components
 │   │   ├── Footer.jsx
 │   │   ├── Header.jsx
+│   │   ├── Login.jsx
 │   │   ├── Main.jsx
 │   │   └── Navbar.jsx
 │   ├── pages
@@ -46,6 +47,9 @@ my-app
 │   │   ├── UsingFectchAPIExample.js
 │   │   ├── useEffectExample.js
 │   │   └── useStateExample.js
+│   ├── reducer
+│   │   ├── store.js
+│   │   └── userSlice.js
 │   ├── App.css
 │   ├── App.js
 │   ├── index.css
@@ -60,6 +64,7 @@ React.js – Library for building interfaces
 JavaScript (ES6+) – Logic and interactivity
 CSS3 – Styling and responsiveness
 Axios / Fetch API / Jquery – Consumption of external APIs
+Redux Toolkit – Global state management
 ````
 ---
 ## 🚀 Getting Started
