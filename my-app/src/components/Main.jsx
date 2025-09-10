@@ -1,5 +1,4 @@
 import Navbar from './Navbar';
-import { Footer } from './Footer';
 import logo from '../logo.svg';
 
 

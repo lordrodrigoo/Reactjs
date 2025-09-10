@@ -19,10 +19,19 @@ import UsingFetchAPI from './pages/UsingFectchAPIExample';
 
   //components
 import { Footer } from './components/Footer';
+import Login from './components/Login';
 
+// Redux
+import { useSelector } from 'react-redux';
+import { selectUser } from './reducer/userSlice';
 
 export default function App() {
+  const { isLogged } = useSelector(selectUser);
   const newUser = { name: 'Rodrigo A', age: 34 };
+
+  if (!isLogged) {
+    return <Login />;
+  }
 
   return (
     <>
@@ -44,15 +53,9 @@ export default function App() {
         </Routes>
       </Main>
       <Footer />
-      
-      
-      
-    
     </>
   );
 }  
-
-
 
 // const [view, setView] = React.useState(true);
 
