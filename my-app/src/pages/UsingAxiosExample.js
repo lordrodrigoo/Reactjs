@@ -31,7 +31,7 @@ export default function UsingAxios() {
     };
 
     return (
-        <div className="using-axios">
+        <div className="using-axios" style={{ padding: '20px', textAlign: 'center' }}>
             <h2>Utilizando Axios</h2>
             <ul>
                 {currentItems.map(item => (

@@ -24,10 +24,10 @@ export default function UsingFetchAPI() {
     const user = data[currentIndex];
 
     return (
-        <div className="using-fetch-api">
+        <div className="using-fetch-api" style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center"}}>
             
             <ul>
-                <h2>Utilizando Fecth API</h2>
+                <h2 style={{display: "flex", alignItems: "center", justifyContent: "center"}}>Utilizando Fecth API</h2>
                 <li className="user-info" key={user.id}>
                     <p><strong style={{ color: "black" }}>Nome:</strong> {user.name}</p>
                     <p><strong style={{ color: "black" }}>Username:</strong> {user.username}</p>

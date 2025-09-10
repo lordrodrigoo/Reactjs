@@ -37,7 +37,7 @@ export default function UsingJquery() {
                         
             </ul>
 
-            <div className="user-navigation">
+            <div className="user-navigation" style={{ textAlign: 'center' }}>
                 <button onClick={prevUser}>Comentário Anterior</button>
                 <button onClick={nextUser}>Próximo Comentário</button>    
             </div>    

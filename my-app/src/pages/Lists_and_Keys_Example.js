@@ -4,21 +4,21 @@ function GenerateElements() {
     const cars = ['Ford', 'Chevrolet', 'Toyota', 'Honda'];
 
     return (
-      <div className="table">
+      <div className="table" style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center"}}>
           <table className="cars-table">
-        <thead>
-          <tr>
-            <th>Tabela de Carros</th>
-          </tr>
-        </thead>
-        <tbody>
-          {cars.map((car, index) => (
-            <tr key={index}>
-              <td>{car}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
+            <thead>
+              <tr>
+                <th>Tabela de Carros</th>
+              </tr>
+            </thead>
+            <tbody>
+              {cars.map((car, index) => (
+                <tr key={index}>
+                  <td>{car}</td>
+                </tr>
+            ))}
+          </tbody>
+        </table>
       </div>
   );
 }

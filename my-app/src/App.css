@@ -4,7 +4,6 @@
 
 .App-logo {
   height: 40vmin;
-  pointer-events: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -35,18 +34,37 @@
   }
 }
 
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar a {
+  margin: 15px;
+  text-decoration: none;
+  color: #222;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  color: #61dafb;
+  transition: all 0.3s ease;
+}
+
+
 .footer {
   background-color: #222;
-  height: 200px;
+  height: 300px;
   color: white;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   font-size: calc(10px + 2vmin);
 }
 
 .header {
-  background-color: #282c34;
+  background-color: #222;
   height: 150px;
   color: white;
   display: flex;
@@ -56,16 +74,7 @@
   font-size: calc(10px + 2vmin);
   padding: 20px;
 }
-.navegation {
-  margin-top: 10px;
-  font-size: larger;
-  background-color: aquamarine;
-}
 
-.main {
-  padding: 20px;
-  background-color: #f0f0f0;
-}
 
 .link{
   padding-left: 15px;
@@ -90,15 +99,16 @@
 .cars-table {
   border-collapse: collapse;
   width: 300px;
-  margin: 20px 20px 20px auto;
   display: table;
-  padding-right: 20px; 
+  margin: 20px;
+ 
+   
 }
 
 .cars-table th, .cars-table td {
   border: 1px solid #100606;
   padding: 8px;
-  text-align: left;
+  text-align: center;
 }
 .cars-table th {
   background-color: #3b3737;
@@ -123,18 +133,23 @@
   border-radius: 5px;
   background-color: #fff;
   max-width: 300px;
-  text-align: left;
+  text-align: center;
 }
 
 
 .vehicle-form2 {
-  margin-left: 40px ;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  margin: 20px ;
   padding: 20px;
   border: 2px solid #ccc;
   border-radius: 5px;
   background-color: #fff;
   max-width: 300px;
-  text-align: left;
+  text-align: center;
 }
 
 .vehicle-form2 textarea {
@@ -147,16 +162,26 @@
 }
 
 .hook-state  {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
   border: 1px, solid #100606;
 }
 
 .hook {
   border: 1px solid #100606;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-top: 10px;
-  margin-bottom: 10px;
+  
 }
 
 .use-effect {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   border: 1px solid #100606;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -192,9 +217,6 @@ button:hover {
   background-color: #45a049;
 }
 
-.user-navigation {
-  margin-bottom: 5px;
-}
 
 .user-info {
   width: 400px;
@@ -204,3 +226,4 @@ button:hover {
   border-top: 1px solid ;
   
 }
+

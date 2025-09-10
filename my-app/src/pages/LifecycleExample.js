@@ -17,11 +17,11 @@ class Counter extends React.Component {
 
   render() {
     return (
-        <>
-            <h2>Stoque de produto x = {this.state.number}</h2>
+        <div style={{textAlign: 'center', marginBottom: '20px' }}>
+            <h2 style={{textAlign: 'center' }}>Stoque de produto x = {this.state.number}</h2>
             <button onClick={this.decrement}>-</button>
             <button onClick={this.increment}>+</button>
-        </>
+        </div>
     );
   }
 }

@@ -1,6 +1,7 @@
 import {Routes, Route} from 'react-router-dom';
-
 import Main from './components/Main';
+import { Header } from './components/Header';
+import './App.css';
 
 // Pages
 import UserBind from './pages/BindExample';
@@ -16,22 +17,18 @@ import UseHookAndState from './pages/useStateExample';
 import UsingAxios from './pages/UsingAxiosExample';
 import UsingFetchAPI from './pages/UsingFectchAPIExample';
 
-//components
+  //components
 import { Footer } from './components/Footer';
 
 
 export default function App() {
-  const newUser = { name: 'Rodrigo', age: 34 };
+  const newUser = { name: 'Rodrigo A', age: 34 };
 
   return (
     <>
-      <header className="header">
-        <h1 className='welcome'>Welcome {newUser.name}!</h1>
-        
-      </header>
+      <Header name='Rodrigo'/>
       <Main>
         <Routes>
-          <Route path="/" element={<div>Home Page</div>} />
           <Route path="/counter" element={<Counter />} />
           <Route path="/userform" element={<UserForm user={newUser} />} />
           <Route path="/userbind" element={<UserBind user={newUser} />} />
@@ -47,6 +44,8 @@ export default function App() {
         </Routes>
       </Main>
       <Footer />
+      
+      
       
     
     </>
