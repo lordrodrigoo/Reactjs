@@ -4,23 +4,25 @@
 ![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow?style=for-the-badge&logo=javascript&logoColor=black)
 ![CSS3](https://img.shields.io/badge/CSS3-blue?style=for-the-badge&logo=css3&logoColor=white)
 
-## 🚀 Sobre o Projeto
+## 🚀 React Learning Repository
 
-**My React App** é uma aplicação desenvolvida em React para demonstrar conhecimentos em:  
+This repository is a learning project focused on practicing different concepts, hooks, and methods in React.js.
+It contains several small examples that demonstrate how React works and how to build reusable components.
+---
+## 🎯 Objective:
+The goal of this project is to study and practice:
 
-- Componentes funcionais e props
-- Uso de Hooks (`useState`, `useEffect`)
-- Manipulação de eventos
-- Formulários e binding
-- Consumo de APIs com Axios e Fetch
-- Ciclo de vida de componentes
-- Renderização de listas e chaves únicas
-
-Este projeto é uma demonstração prática das minhas habilidades em **React** e desenvolvimento frontend moderno.
-
+- React components (functional and class-based)
+- Props and state management
+- Handling events and forms
+- Lifecycle methods
+- Hooks (useState, useEffect, etc.)
+- Working with APIs (Axios and Fetch)
+- Lists and keys
+- Basic styling and structure
 ---
 
-## 🗂 Estrutura do Projeto
+## 🗂 Project Structure
 
 ```text
 my-app
@@ -52,12 +54,29 @@ my-app
 ├── package.json
 └── README.md
 
-💻 Tecnologias Utilizadas
+💻 Technologies used
 
-React.js – Biblioteca para construção de interfaces
+React.js – Library for building interfaces
+JavaScript (ES6+) – Logic and interactivity
+CSS3 – Styling and responsiveness
+Axios / Fetch API / Jquery – Consumption of external APIs
+````
+---
+## 🚀 Getting Started
+1° Install dependencies:
+````
+npm install
+````
+2° Run the development server:
+````
+npm start 
+````
+The app will be available at: http://localhost:3000
+---
 
-JavaScript (ES6+) – Lógica e interatividade
+## 📖 Notes
+- This repository is not a production app, but a learning space.
+- Each file in the pages/ folder demonstrates a different React concept.
+- The structure is simple and focused on practice.
+---
 
-CSS3 – Estilização e responsividade
-
-Axios / Fetch API – Consumo de APIs externas
